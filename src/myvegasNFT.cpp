@@ -139,3 +139,5 @@ private:
 
 	typedef eosio::multi_index< "stat"_n, movNFT_stats > stats;
 };
+
+EOSIO_DISPATCH(eosio::token, (create)(transfer)(retire))
